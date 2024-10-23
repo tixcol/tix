@@ -3,127 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIX - Boletas Digitales Verificadas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Tix Colombia - Boletas Digitales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <style>
         body {
-            margin: 0;
             font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
             color: #595959;
-            background-color: #f9f9f9;
+            background-color: #f8f9fa;
         }
         header {
-            background-color: #003366;
+            background-color: #fff;
             padding: 20px;
             text-align: center;
-            color: white;
+            border-bottom: 2px solid #4a6a9f;
         }
-        h1 {
-            font-size: 36px;
-            margin: 0;
+        header img {
+            width: 150px;
+        }
+        nav {
+            background-color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 1px solid #4a6a9f;
+        }
+        nav a {
+            color: #595959;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
         }
         section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .form-container {
+            padding: 60px 20px;
             text-align: center;
-            margin-bottom: 40px;
         }
-        .form-container iframe {
-            border: none;
+        h1, h2, h3 {
+            color: #4a6a9f;
         }
-        .features {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+        h1 {
+            font-size: 2.5em;
         }
-        .feature {
-            flex: 1 1 300px;
-            margin: 15px;
-            padding: 20px;
-            background-color: #4a6a9f;
-            color: white;
-            text-align: center;
-            border-radius: 8px;
+        h2 {
+            font-size: 2em;
         }
-        .feature h3 {
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #003366;
-            color: white;
-            margin-top: 40px;
-        }
-        img.logo {
-            width: 150px;
-            margin: 0 auto 20px;
-            display: block;
+        h3 {
+            font-size: 1.5em;
         }
         p {
-            font-size: 18px;
+            font-size: 1.1em;
         }
-        .section-title {
-            font-weight: 600;
-            font-size: 24px;
-            color: #003366;
-            margin-bottom: 20px;
+        iframe {
+            width: 100%;
+            max-width: 640px;
+            height: 640px;
+            border: none;
+        }
+        .slider {
+            margin: 40px 0;
+        }
+        footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            color: #595959;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <img class="logo" src="https://drive.google.com/uc?export=view&id=1WObM7GjlqynTxJ0BYwkrRfGwWXJdWcTj" alt="TIX Logo">
-    <h1>TIX - Boletas Digitales Verificadas</h1>
+    <img src="https://drive.google.com/uc?export=view&id=1WObM7GjlqynTxJ0BYwkrRfGwWXJdWcTj" alt="TixCol Logo">
 </header>
 
-<section class="form-container">
-    <h2>Solicita nuestro servicio</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2HhR5zcF72e7tlaCy_q9qB91wAAf7HbQb9T2dypicpgEm_Q/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+<nav>
+    <a href="#como-funciona">¿Cómo funciona?</a>
+    <a href="#tarifa">Tarifa</a>
+    <a href="https://api.whatsapp.com/send?phone=573202208255&text=Hola%20Quiero%20vender%20boletas%20seguras" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" style="width: 24px;">
+    </a>
+</nav>
+
+<section id="solicitud-de-servicio">
+    <h1>Recibe las boletas digitales de los eventos que amas,<br> con plena satisfacción, y desde tu celular</h1>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2HhR5zcF72e7tlaCy_q9qB91wAAf7HbQb9T2dypicpgEm_Q/viewform?embedded=true">Cargando…</iframe>
 </section>
 
-<section>
-    <h2 class="section-title">¿Qué es TIX?</h2>
-    <p>TIX es la plataforma digital que asegura la transferencia de boletas para conciertos, teatro y partidos de fútbol. Sin costos ocultos, sin boletas falsificadas, y con transferencias verificadas en tiempo real.</p>
+<section id="como-funciona">
+    <h1>Adquiere y vende tus boletas digitales en un lugar seguro, sin costos ocultos, y con una tarifa clara.</h1>
+    <ol>
+        <li>Entrega los datos de quien vende, quien compra y de la(s) boleta(s)</li>
+        <li>El comprador realiza el pago establecido</li>
+        <li>El vendedor entrega la(s) boleta(s)</li>
+        <li>Tix verifica la transacción y libera dinero y boleta(s)</li>
+    </ol>
 </section>
 
-<section>
-    <h2 class="section-title">Nuestras ventajas</h2>
-    <div class="features">
-        <div class="feature">
-            <h3>#Disfruta</h3>
-            <p>Sin perder plata. Aseguramos la transferencia de boletas digitales verificadas, pagamos al vendedor de inmediato.</p>
-        </div>
-        <div class="feature">
-            <h3>#Fácil</h3>
-            <p>Sin conversaciones innecesarias. Hacemos la menor cantidad de interacciones posibles.</p>
-        </div>
-        <div class="feature">
-            <h3>#Seguro</h3>
-            <p>Sin boletas falsificadas o duplicadas. Solo realizamos transferencias verificadas 100%.</p>
-        </div>
-    </div>
+<section id="tarifa">
+    <h2>Sin costos ocultos y con una tarifa clara.</h2>
+    <p>Servicio 15.000 COP + 5% del monto de la transacción.</p>
 </section>
 
-<section>
-    <h2 class="section-title">#Tarifa</h2>
-    <p>Sin costos ocultos y con una tarifa clara. Servicio de 15.000 COP + 5% del monto de la transacción.</p>
+<section id="cuidate">
+    <h2>Cuídate</h2>
+    <p>Evita reuniones presenciales innecesarias e inseguras, con gente que no conoces, y compra las boletas desde tu celular.</p>
 </section>
 
-<section>
-    <h2 class="section-title">#Condiciones</h2>
-    <p>En TIX no hay secretos ni letra pequeña. Revisa todas las condiciones del servicio TIX para asegurarte de que recibes la mejor experiencia sin sorpresas.</p>
+<section id="disfruta">
+    <h3>Sin perder plata</h3>
+    <p>Aseguramos la transferencia de boletas digitales verificadas, pagamos al vendedor en su cuenta bancaria/billetera digital y de inmediato.</p>
+
+    <h3>Sin conversaciones infinitas</h3>
+    <p>Hacemos la menor cantidad de interacciones y sin conversaciones que no agregan valor.</p>
+
+    <h3>Sin boletas falsificadas o duplicadas</h3>
+    <p>Solamente realizamos transferencia de boletas digitales 100% verificadas.</p>
+</section>
+
+<section id="por-que-usar-tix">
+    <h3>Vende tus boletas digitales de manera ágil, recibe el dinero en tu cuenta bancaria o billetera de inmediato.</h3>
+    <h3>Compra tus boletas de manera garantizada con seguridad, facilidad y desde tu celular.</h3>
+</section>
+
+<section id="testimonios" class="slider">
+    <h2>Testimonios</h2>
+    <p>"Con tix tengo la seguridad de recibir las boletas, sin perder tiempo y a la fija. ¡Una berraquera!" - @Antonio, Medellín</p>
+    <p>"Me siento muy tranquila comprando mis boletas con tix y me evito el trancón, el frío y que me roben." - @MariaP, Bogotá</p>
+    <p>"El servicio de tix es claro y rápido. Así uno queda feliz y el vendedor también." - @Diego, Cali</p>
+    <p>"Me generaba mucha angustia tener que ir horas antes del concierto a buscar boletas. Hacerlo con tix es mucho más fácil y sin estrés. ¡Gracias!" - @Cris, Bogotá</p>
+</section>
+
+<section id="condiciones">
+    <h2>En tix no hay secretos ni letra pequeña</h2>
+    <h3>Revisa todas las condiciones del servicio tix</h3>
+    <a href="https://drive.google.com/file/d/1L_eYqLLJH0yy1_9vBxywLQEY0rvmrV8c/view?usp=sharing" target="_blank">Condiciones de servicio Tix</a>
+</section>
+
+<section id="preguntas">
+    <h2>¿Tienes más preguntas?</h2>
+    <p><strong>¿Cuánto cuesta el servicio?</strong> R: Servicio 15.000 COP + 5% del monto de la transacción.</p>
+    <p><strong>¿Cuánto se demoran en pagar?</strong> R: 2 horas desde la verificación del pago y entrega efectiva de boleta(s).</p>
+    <p><strong>¿Qué pasa si quiero vender una boleta en pdf?</strong> R: Busca otro mecanismo de venta de boletaría secundaria.</p>
+    <p>Consulta más preguntas en nuestro horario de atención.</p>
 </section>
 
 <footer>
-    <p>&copy; 2024 TIX. Todos los derechos reservados.</p>
+    <p>Horario de atención en Chat de Whatsapp: Lunes a sábado de 8:00 am a 7:00 pm; Domingos de 9:00 am a 5:00 pm.</p>
+    <p>Whatsapp - 3143746599</p>
 </footer>
 
 </body>
