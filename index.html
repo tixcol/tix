@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIX - Boletas Digitales Verificadas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: 'Roboto', sans-serif;
-            color: #333;
+            font-family: 'Poppins', sans-serif;
+            color: #595959;
             background-color: #f9f9f9;
         }
         header {
-            background-color: #6125E4;
-            color: white;
+            background-color: #003366;
             padding: 20px;
             text-align: center;
+            color: white;
         }
         h1 {
             font-size: 36px;
             margin: 0;
-        }
-        p {
-            font-size: 18px;
         }
         section {
             max-width: 900px;
             margin: 40px auto;
             padding: 20px;
             background-color: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .container {
-            padding: 20px;
+        .form-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .form-container iframe {
+            border: none;
         }
         .features {
             display: flex;
@@ -44,89 +45,61 @@
             flex: 1 1 300px;
             margin: 15px;
             padding: 20px;
-            background-color: #f3f3f3;
+            background-color: #4a6a9f;
+            color: white;
             text-align: center;
+            border-radius: 8px;
         }
         .feature h3 {
-            color: #6125E4;
+            font-weight: 600;
             margin-bottom: 10px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            margin-top: 20px;
-        }
-        form input, form textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        form button {
-            padding: 10px;
-            background-color: #6125E4;
-            color: white;
-            border: none;
-            font-size: 18px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-        form button:hover {
-            background-color: #5000d4;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #333;
+            background-color: #003366;
             color: white;
             margin-top: 40px;
+        }
+        img.logo {
+            width: 150px;
+            margin: 0 auto 20px;
+            display: block;
         }
     </style>
 </head>
 <body>
 
 <header>
+    <img class="logo" src="https://drive.google.com/uc?export=view&id=1WObM7GjlqynTxJ0BYwkrRfGwWXJdWcTj" alt="TIX Logo">
     <h1>TIX - Boletas Digitales Verificadas</h1>
-    <p>Compra y vende tus boletas de eventos sin preocupaciones</p>
 </header>
 
-<section>
-    <div class="container">
-        <h2>¿Qué es TIX?</h2>
-        <p>TIX es la plataforma digital que asegura la transferencia de boletas para conciertos, teatro y partidos de fútbol. Sin costos ocultos, sin boletas falsificadas, y con transferencias verificadas en tiempo real.</p>
-    </div>
+<section class="form-container">
+    <h2>Solicita nuestro servicio</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2HhR5zcF72e7tlaCy_q9qB91wAAf7HbQb9T2dypicpgEm_Q/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 </section>
 
 <section>
-    <div class="container">
-        <h2>Nuestras ventajas</h2>
-        <div class="features">
-            <div class="feature">
-                <h3>#Disfruta</h3>
-                <p>Sin perder plata. Aseguramos la transferencia de boletas digitales verificadas, pagamos al vendedor de inmediato.</p>
-            </div>
-            <div class="feature">
-                <h3>#Fácil</h3>
-                <p>Sin conversaciones innecesarias. Hacemos la menor cantidad de interacciones posibles.</p>
-            </div>
-            <div class="feature">
-                <h3>#Seguro</h3>
-                <p>Sin boletas falsificadas o duplicadas. Solo realizamos transferencias verificadas 100%.</p>
-            </div>
+    <h2>¿Qué es TIX?</h2>
+    <p>TIX es la plataforma digital que asegura la transferencia de boletas para conciertos, teatro y partidos de fútbol. Sin costos ocultos, sin boletas falsificadas, y con transferencias verificadas en tiempo real.</p>
+</section>
+
+<section>
+    <h2>Nuestras ventajas</h2>
+    <div class="features">
+        <div class="feature">
+            <h3>#Disfruta</h3>
+            <p>Sin perder plata. Aseguramos la transferencia de boletas digitales verificadas, pagamos al vendedor de inmediato.</p>
         </div>
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <h2>Solicita más información</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <input type="text" name="name" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu correo electrónico" required>
-            <textarea name="message" rows="5" placeholder="Cuéntanos en qué estás interesado..." required></textarea>
-            <button type="submit">Enviar Solicitud</button>
-        </form>
+        <div class="feature">
+            <h3>#Fácil</h3>
+            <p>Sin conversaciones innecesarias. Hacemos la menor cantidad de interacciones posibles.</p>
+        </div>
+        <div class="feature">
+            <h3>#Seguro</h3>
+            <p>Sin boletas falsificadas o duplicadas. Solo realizamos transferencias verificadas 100%.</p>
+        </div>
     </div>
 </section>
 
